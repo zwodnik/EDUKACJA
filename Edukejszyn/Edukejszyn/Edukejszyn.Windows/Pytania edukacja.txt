@@ -30,5 +30,30 @@ to kreator tekstu
 to przycisk na klawiaturze
 
 GEOGRAFIA
+Stolic¹ Wêgier jest:
+Bu³garia
+Sofia
+Budapeszt -
+Bukareszt
+
+Stolica Maroka to:
+Abu-dabi
+Rabat -
+Malabo
+Lusaka
+
+Najd³u¿sza rzeka na œwiecie to:
+Nil
+Amazonka -
+Jangcy
+Odra
+
 
 MATEMATYKA
+Suma n liczb podzielona przez n.
+A. œrednia zarobków przeciêtnego Francuza
+B. œrednia wa¿ona -
+C. œrednia arytmetyczna
+D. œrednia krajowa
+
+
