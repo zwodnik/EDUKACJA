@@ -15,9 +15,13 @@ namespace Edukejszyn
         }
 
         public Kategoria kategoria;
+        public int punkty = 0;
+        public int index = 0;
 
         public Logika()
         {
         }
+
+        
     }
 }
