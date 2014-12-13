@@ -94,90 +94,124 @@ namespace Edukejszyn
         private void ODPbutton1(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
         	// TODO: Add event handler implementation here.
-            if(logika.index < SPORTpyt.Count - 1)logika.index++;
+             if(logika.index < SPORTpyt.Count)
+            {
             if (logika.kategoria == Logika.Kategoria.SPORT && SPORTpyt[logika.index].Poprawna == 1)logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.GEOGRAFIA && GEOpyt[logika.index].Poprawna == 1) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.INFORMATYKA && INFpyt[logika.index].Poprawna == 1) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.MATEMATYKA && MATpyt[logika.index].Poprawna == 1) logika.punkty++;
+             }
+            if (logika.index < SPORTpyt.Count) logika.index++;
             OdswiezPytanie();
         }
 
         private void ODPbutton2(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
         	// TODO: Add event handler implementation here.
-            if (logika.index < SPORTpyt.Count - 1) logika.index++;
+             if(logika.index < SPORTpyt.Count)
+            {
             if (logika.kategoria == Logika.Kategoria.SPORT && SPORTpyt[logika.index].Poprawna == 2) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.GEOGRAFIA && GEOpyt[logika.index].Poprawna == 2) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.INFORMATYKA && INFpyt[logika.index].Poprawna == 2) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.MATEMATYKA && MATpyt[logika.index].Poprawna == 2) logika.punkty++;
+             }
+            if (logika.index < SPORTpyt.Count) logika.index++;
             OdswiezPytanie();
         }
 
         private void ODPbutton3(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
         	// TODO: Add event handler implementation here.
-            if (logika.index < SPORTpyt.Count - 1) logika.index++;
+             if(logika.index < SPORTpyt.Count)
+            {
             if (logika.kategoria == Logika.Kategoria.SPORT && SPORTpyt[logika.index].Poprawna == 3) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.GEOGRAFIA && GEOpyt[logika.index].Poprawna == 3) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.INFORMATYKA && INFpyt[logika.index].Poprawna == 3) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.MATEMATYKA && MATpyt[logika.index].Poprawna == 3) logika.punkty++;
+             }
+            if (logika.index < SPORTpyt.Count) logika.index++;
             OdswiezPytanie();
         }
 
         private void ODPbutton4(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
         	// TODO: Add event handler implementation here.
-            if (logika.index < SPORTpyt.Count - 1) logika.index++;
+            
+            if(logika.index < SPORTpyt.Count)
+            {
             if (logika.kategoria == Logika.Kategoria.SPORT && SPORTpyt[logika.index].Poprawna == 4) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.GEOGRAFIA && GEOpyt[logika.index].Poprawna == 4) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.INFORMATYKA && INFpyt[logika.index].Poprawna == 4) logika.punkty++;
             if (logika.kategoria == Logika.Kategoria.MATEMATYKA && MATpyt[logika.index].Poprawna == 4) logika.punkty++;
+            }
+            if (logika.index < SPORTpyt.Count) logika.index++;
             OdswiezPytanie();
         }
 
         public void OdswiezPytanie()
         {
-            if (logika.kategoria == Logika.Kategoria.SPORT)
+            if (logika.index < SPORTpyt.Count)
             {
-                PytanieBlock.Text = SPORTpyt[logika.index].Pytanie;
-                ODP1.Content = SPORTpyt[logika.index].Odpowiedz1;
-                ODP2.Content = SPORTpyt[logika.index].Odpowiedz2;
-                ODP3.Content = SPORTpyt[logika.index].Odpowiedz3;
-                ODP4.Content = SPORTpyt[logika.index].Odpowiedz4;
-                
-            }
+                if (logika.kategoria == Logika.Kategoria.SPORT)
+                {
+                    PytanieBlock.Text = SPORTpyt[logika.index].Pytanie + "   " + (logika.index + 1).ToString() + "/5";
+                    ODP1.Content = SPORTpyt[logika.index].Odpowiedz1;
+                    ODP2.Content = SPORTpyt[logika.index].Odpowiedz2;
+                    ODP3.Content = SPORTpyt[logika.index].Odpowiedz3;
+                    ODP4.Content = SPORTpyt[logika.index].Odpowiedz4;
 
-            if (logika.kategoria == Logika.Kategoria.GEOGRAFIA)
+                }
+
+                if (logika.kategoria == Logika.Kategoria.GEOGRAFIA)
+                {
+                    PytanieBlock.Text = GEOpyt[logika.index].Pytanie + "   " + (logika.index + 1).ToString() + "/5";
+                    ODP1.Content = GEOpyt[logika.index].Odpowiedz1;
+                    ODP2.Content = GEOpyt[logika.index].Odpowiedz2;
+                    ODP3.Content = GEOpyt[logika.index].Odpowiedz3;
+                    ODP4.Content = GEOpyt[logika.index].Odpowiedz4;
+
+                }
+
+                if (logika.kategoria == Logika.Kategoria.INFORMATYKA)
+                {
+                    PytanieBlock.Text = INFpyt[logika.index].Pytanie + "   " + (logika.index + 1).ToString() + "/5";
+                    ODP1.Content = INFpyt[logika.index].Odpowiedz1;
+                    ODP2.Content = INFpyt[logika.index].Odpowiedz2;
+                    ODP3.Content = INFpyt[logika.index].Odpowiedz3;
+                    ODP4.Content = INFpyt[logika.index].Odpowiedz4;
+
+                }
+
+                if (logika.kategoria == Logika.Kategoria.MATEMATYKA)
+                {
+                    PytanieBlock.Text = MATpyt[logika.index].Pytanie + "   " + (logika.index + 1).ToString() + "/5";
+                    ODP1.Content = MATpyt[logika.index].Odpowiedz1;
+                    ODP2.Content = MATpyt[logika.index].Odpowiedz2;
+                    ODP3.Content = MATpyt[logika.index].Odpowiedz3;
+                    ODP4.Content = MATpyt[logika.index].Odpowiedz4;
+
+                }
+
+                PunktyBlock.Text = "Punkty: " + logika.punkty;
+            }
+            else
             {
-                PytanieBlock.Text = GEOpyt[logika.index].Pytanie;
-                ODP1.Content = GEOpyt[logika.index].Odpowiedz1;
-                ODP2.Content = GEOpyt[logika.index].Odpowiedz2;
-                ODP3.Content = GEOpyt[logika.index].Odpowiedz3;
-                ODP4.Content = GEOpyt[logika.index].Odpowiedz4;
-
+                WynikKoncowy();
             }
+        }
 
-            if (logika.kategoria == Logika.Kategoria.INFORMATYKA)
-            {
-                PytanieBlock.Text = INFpyt[logika.index].Pytanie;
-                ODP1.Content = INFpyt[logika.index].Odpowiedz1;
-                ODP2.Content = INFpyt[logika.index].Odpowiedz2;
-                ODP3.Content = INFpyt[logika.index].Odpowiedz3;
-                ODP4.Content = INFpyt[logika.index].Odpowiedz4;
-
-            }
-
-            if (logika.kategoria == Logika.Kategoria.MATEMATYKA)
-            {
-                PytanieBlock.Text = MATpyt[logika.index].Pytanie;
-                ODP1.Content = MATpyt[logika.index].Odpowiedz1;
-                ODP2.Content = MATpyt[logika.index].Odpowiedz2;
-                ODP3.Content = MATpyt[logika.index].Odpowiedz3;
-                ODP4.Content = MATpyt[logika.index].Odpowiedz4;
-
-            }
-
-            PunktyBlock.Text = "Punkty: " + logika.punkty;
+        private void WynikKoncowy()
+        {
+            ODP1.Visibility = Visibility.Collapsed;
+            ODP2.Visibility = Visibility.Collapsed;
+            ODP3.Visibility = Visibility.Collapsed;
+            ODP4.Visibility = Visibility.Collapsed;
+            PunktyBlock.Visibility = Visibility.Collapsed;
+            SPORT.Visibility = Visibility.Collapsed;
+            GEOGRAFIA.Visibility = Visibility.Collapsed;
+            INFORMATYKA.Visibility = Visibility.Collapsed;
+            MATEMATYKA.Visibility = Visibility.Collapsed;
+            PytanieBlock.Text = "Ilość uzyskanych punktów: " + logika.punkty + "/5";
         }
     }
 }
