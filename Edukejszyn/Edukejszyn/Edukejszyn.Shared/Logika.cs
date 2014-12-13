@@ -19,30 +19,22 @@ namespace Edukejszyn
         public int index = 0;
         public int[] randomik = new int[5];
 
+        List<int> indeksiki = new List<int> { 0, 1, 2, 3, 4 };
+
         public Logika()
         {
         }
 
         public void Losowanie()
         {
-              for(int i = 0; i < 5; i++)
-            {
-                randomik[i] = -1;
-               
-            }
+            indeksiki = new List<int> { 0, 1, 2, 3, 4 };
+
             Random random = new Random();
             for(int i = 0; i < 5; i++)
             {
-               
-                randomik[i] = random.Next(0, 5);
-                for (int j = 0; j < 5; j++)
-                {
-                    if (randomik[i] == randomik[j] && i != j)
-                    {
-                        i--;
-                        break;
-                    }
-                }
+
+                randomik[i] = indeksiki[random.Next(0, indeksiki.Count)];
+                indeksiki.Remove(randomik[i]);
             }
         }
         
