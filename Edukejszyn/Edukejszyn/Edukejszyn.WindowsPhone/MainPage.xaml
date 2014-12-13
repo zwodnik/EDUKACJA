@@ -5,10 +5,19 @@
     xmlns:local="using:Edukejszyn"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    mc:Ignorable="d">
 
-    <Grid>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <RadioButton x:Name="SPORT" Content="SPORT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="4,9,0,0" Height="57" Width="135" FontFamily="Wild Words PL" FontSize="21.333" Checked="SPORTchecked"/>
+        <RadioButton x:Name="GEOGRAFIA" Content="GEOGRAFIA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="123,9,0,0" Height="67" Width="226" FontFamily="Wild Words PL" FontSize="21.333" Checked="GEOchecked"/>
+        <RadioButton x:Name="INFORMATYKA" Content="INFORMATYKA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="292,9,0,0" Height="67" Width="226" FontFamily="Wild Words PL" FontSize="21.333" Checked="INFchecked" RenderTransformOrigin="0.496,0.553"/>
+        <RadioButton x:Name="MATEMATYKA" Content="MATEMATYKA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="486,9,0,0" Height="67" Width="226" FontSize="21.333" FontFamily="Wild Words PL" Checked="MATchecked" RenderTransformOrigin="-0.852,0.771"/>
+        <TextBlock x:Name="PytanieBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="-338,73,0,0" Height="33" Width="1366" FontFamily="Wild Words PL" FontSize="13.333" TextAlignment="Center" LineHeight="48"/>
+        <Button x:Name="ODP1" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="92,105,273,0" Width="302" Height="40" FontSize="20" FontFamily="Global User Interface" Click="ODPbutton1"/>
+        <Button x:Name="ODP2" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="92,176,273,0" Width="302" Height="49" FontSize="20" FontFamily="Wild Words PL" Click="ODPbutton2"/>
+        <Button x:Name="ODP3" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="92,245,273,0" Width="302" Height="47" FontSize="20" FontFamily="Wild Words PL" Click="ODPbutton3"/>
+        <Button x:Name="ODP4" Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="92,306,273,0" Width="302" Height="44" FontSize="20" FontFamily="Wild Words PL" Click="ODPbutton4"/>
+        <TextBlock x:Name="PunktyBlock" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Punkty: " VerticalAlignment="Top" Margin="417,320,0,0" Height="48" Width="215" FontSize="33.333"/>
 
     </Grid>
 </Page>
