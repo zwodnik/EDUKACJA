@@ -8,6 +8,16 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    	<RadioButton x:Name="SPORT" Content="SPORT" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="97,75,0,0" Height="67" Width="226" FontFamily="Wild Words PL" FontSize="21.333"/>
+    	<RadioButton x:Name="GEOGRAFIA" Content="GEOGRAFIA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="411,75,0,0" Height="67" Width="226" FontFamily="Wild Words PL" FontSize="21.333"/>
+    	<RadioButton x:Name="INFORMATYKA" Content="INFORMATYKA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="729,75,0,0" Height="67" Width="226" FontFamily="Wild Words PL" FontSize="21.333"/>
+    	<RadioButton x:Name="MATEMATYKA" Content="MATEMATYKA" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="1079,75,0,0" Height="67" Width="226" FontSize="21.333" FontFamily="Wild Words PL"/>
+    	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Margin="0,257,0,0" Height="33" Width="1366" FontFamily="Wild Words PL" FontSize="26.667" TextAlignment="Center" LineHeight="48"/>
+    	<Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="533,369,531,0" Width="302" Height="50" FontSize="20" FontFamily="Wild Words PL"/>
+    	<Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="533,444,531,0" Width="302" Height="50" FontSize="20" FontFamily="Wild Words PL"/>
+    	<Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="533,522,531,0" Width="302" Height="50" FontSize="20" FontFamily="Wild Words PL"/>
+    	<Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="533,592,531,0" Width="302" Height="50" FontSize="20" FontFamily="Wild Words PL"/>
+    	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Punkty: " VerticalAlignment="Top" Margin="10,720,0,0" Height="48" Width="215" FontSize="33.333"/>
 
     </Grid>
 </Page>
