@@ -35,6 +35,12 @@ namespace Edukejszyn
             get;
             set;
         }
+
+       public int Poprawna
+       {
+           get;
+           set;
+       }
         public Pytania()
         {
         }
