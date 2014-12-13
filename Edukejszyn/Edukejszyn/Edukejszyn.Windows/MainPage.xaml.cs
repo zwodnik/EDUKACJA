@@ -22,6 +22,13 @@ namespace Edukejszyn
     /// </summary>
     public sealed partial class MainPage : Page
     {
+
+        private string NazwaPrzedmiotu;
+        private int Poprawna;
+
+        public enum ENUMPrzedmiot { SPORT, GEO, INF, MAT}
+
+
         public MainPage()
         {
             this.InitializeComponent();
