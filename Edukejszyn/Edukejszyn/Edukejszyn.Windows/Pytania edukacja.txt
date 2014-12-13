@@ -1,0 +1,34 @@
+SPORT
+Ile razy Adam Ma³ysz wygra³ wygra³ Zimowe Mistrzostwa Polski w skokach narciarskich?
+17
+21 -
+24
+27
+INFORMATYKA
+Jaki typ partycji wykorzystuje Windows XP ?
+FAT 32
+NTFS
+FAT 32 i NTFS -
+FAT 16
+
+Jaka pamiêæ jest przeznaczona do trzymania informacji o BIOS-ie ?
+RAM
+ROM -
+RAM i ROM
+ZIP
+ 
+Jaka komenda w Windows s³uzy do otwierania rejestru systemowego ?
+regedit -
+msconfig
+C:\Windows\
+rejestr\
+
+Co oznacza s³owo "shareware"? 
+to rodzaj licencji -
+to program antywirusowy
+to kreator tekstu
+to przycisk na klawiaturze
+
+GEOGRAFIA
+
+MATEMATYKA
